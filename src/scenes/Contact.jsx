@@ -16,6 +16,9 @@ const Contact = () => {
     if (!isValid) {
       e.preventDefault();
     }
+    setTimeout(() => {
+      e.target.reset()
+    }, 500)
     
   };
 
