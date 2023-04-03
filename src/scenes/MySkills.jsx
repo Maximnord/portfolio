@@ -70,9 +70,9 @@ const MySkills = () => {
             <div className="w-1/2 md:w-3/4 h-32 bg-blue absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5">
-            <b>Languages:</b> JavaScript, PHP. <br />
-            <b>Frameworks:</b> Node.js, React.js, Redux, Next.js, Laravel. <br />
-            <b>Databases:</b> SQL, MongoDB, Elasticsearch.
+            <b className="text-red">Languages:</b> JavaScript, PHP. <br />
+            <b className="text-red">Frameworks:</b> Node.js, React.js, Redux, Next.js, Laravel. <br />
+            <b className="text-red">Databases:</b> SQL, MongoDB, Elasticsearch.
           </p>
         </motion.div>
 
@@ -97,10 +97,12 @@ const MySkills = () => {
             </div>
             <div className="w-1/2 md:w-3/4 h-32 bg-red absolute right-0 top-0 z-[-1]" />
           </div>
+
           <p className="mt-5">
-            <b>Platforms:</b> WordPress, Woocommerce, Magento, Shopify.
+            <b className="text-red">Platforms:</b> WordPress, Woocommerce, Magento, Shopify.
           </p>
         </motion.div>
+        
         {/* IMAGINATIVE */}
         <motion.div
           className="md:w-1/3 mt-10"

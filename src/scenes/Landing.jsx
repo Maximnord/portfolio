@@ -14,12 +14,12 @@ const Landing = ({ setSelectedPage }) => {
       <div className="basis-3/5 z-10 mt-16 md:mt-35 flex justify-center md:order-2">
         {isAboveLarge ? (
           <div
-            className="relative z-0 ml-20 before:absolute before:-top-6 before:-left-6 
+            className="relative z-0 ml-20 mt-10 before:absolute before:-top-5 before:-left-5 
             before:w-full before:max-w-[400px] md:before:max-w-[600px] before:h-full before:border-2 before:border-blue before:z-[-1]"
           >
             <img
               alt="profile"
-              className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[600px]"
+              className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[300px] md:max-w-[500px]"
               src="assets/max.jpg"
             />
           </div>
@@ -54,11 +54,18 @@ const Landing = ({ setSelectedPage }) => {
               Soskind
             </span>
           </p>
-
-          <p className="mt-10 mb-7 text-m text-center md:text-start">
-            FullStack developer, highly motivated, fast self-learner, proficient with a vast array of
-knowledge FrontEnd, BackEnd, responsive frameworks, databases, and best code practices.
-          </p>
+          
+          <div className="mt-10 mb-7 text-m text-center md:text-start">
+            <p className="text-red"><b>Briefly about me:</b></p>
+            FullStack developer, highly motivated, fast self-learner, proficient
+            with a vast array of knowledge FrontEnd, BackEnd, responsive
+            frameworks, databases, and best code practices.
+          </div>
+          <div>
+            <span className="text-red">Tel:</span> <a href="tel:+972-54-9735472">+972-54-9735472</a>    <br />             
+            <span className="text-red">Email:</span><a href="mailto: maximnord@gmail.com"> maximnord@gmail.com </a> <br />
+            <span className="text-red">Address:</span> Arlozorov 62. Tel-Aviv
+          </div>
         </motion.div>
 
         {/* CALL TO ACTIONS */}

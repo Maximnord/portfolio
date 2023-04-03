@@ -29,8 +29,8 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
           <AnchorLink href="#home">
             <img
               alt="logo-link"
-              src="../assets/logo-top.png"
-              style={{ width: "72px" }}
+              src="../assets/myLogo.png"
+              style={{ width: "160px"}}
             />
           </AnchorLink>
         </h4>

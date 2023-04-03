@@ -16,7 +16,7 @@ const Contact = () => {
     if (!isValid) {
       e.preventDefault();
     }
-    e.target.reset()
+    
   };
 
   return (
