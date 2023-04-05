@@ -1,6 +1,7 @@
 import LineGradient from "../components/LineGradient";
 import { useForm } from "react-hook-form";
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 const Contact = () => {
   const {
@@ -21,6 +22,11 @@ const Contact = () => {
     }, 500)
     
   };
+
+  const [acceptWithRules, setAcceptWithRules] = useState(false)
+  const toggleAcceptRules = () => {
+    setAcceptWithRules(!acceptWithRules)
+  }
 
   return (
     <section id="contact" className="contact py-48">
@@ -59,7 +65,7 @@ const Contact = () => {
           }}
           className="basis-1/2 flex justify-center"
         >
-          <img src="../assets/max1.jpg" alt="contact" style={{height: "50vh"}}/>
+          <img src="../assets/max1.jpg" alt="contact" className="w-full max-w-[400px]" />
         </motion.div>
 
         <motion.div
@@ -98,6 +104,7 @@ const Contact = () => {
             <input
               className="w-full bg-blue font-semibold placeholder-opaque-black p-3 mt-5"
               type="text"
+              name="email"
               placeholder="EMAIL"
               {...register("email", {
                 required: true,
@@ -110,6 +117,12 @@ const Contact = () => {
                 {errors.email.type === "pattern" && "Invalid email address."}
               </p>
             )}
+            {/* <input type="hidden" name="_captcha" value="false"></input> */}
+            <input type="hidden" name="_blacklist" value="spammy pattern, banned term, phrase"></input>
+            <input type="hidden" name="_template" value="table"></input>
+            <input type="hidden" name="_subject" value="New submission!"></input>
+            <input type="hidden" name="_autoresponse" value="Dear Friend Thank You! I've got your message and I will answer you later. Best Regards! Max Soskind"/>
+            <input type="hidden" name="_next" value="https://google.com"></input>
 
             <textarea
               className="w-full bg-blue font-semibold placeholder-opaque-black p-3 mt-5"
@@ -130,13 +143,21 @@ const Contact = () => {
                   "Max length is 2000 char."}
               </p>
             )}
+            <div className="mt-3">
+              <input type="checkbox" onChange={toggleAcceptRules} className="w-4 h-4"/>
+
+              <span className="ml-2 text-sm">I agree with terms and conditions.</span>
+            </div>
+            
 
             <button
-              className="p-5 bg-yellow font-semibold text-deep-blue mt-5 hover:bg-red hover:text-white transition duration-500"
-              type="submit"
+              className="p-5 bg-yellow font-semibold text-deep-blue mt-5 hover:bg-red hover:text-white transition duration-500 disabled:opacity-50 disabled:hover:bg-yellow disabled:hover:text-deep-blue"
+              type="submit" 
+              disabled={!acceptWithRules}
             >
               SEND ME A MESSAGE
             </button>
+            
           </form>
         </motion.div>
       </div>
