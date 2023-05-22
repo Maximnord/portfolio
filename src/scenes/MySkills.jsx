@@ -24,7 +24,7 @@ const MySkills = () => {
           </p>
           <LineGradient width="w-5/3" />
           <p className="mt-10 mb-7">
-            I am highly dedicated to continuously honing my skills and professional toolbox through hard work, collaboration, and learning from my peers. I have an eye for aesthetics and I enjoy hand drawing for my leisure. 
+            Proficient in designing and developing complex, user-friendly web applications using a variety of programming languages, frameworks, and tools : 
           </p>
         </motion.div>
 
@@ -47,7 +47,7 @@ const MySkills = () => {
       </div>
 
       {/* SKILLS */}
-      <div className="md:flex md:justify-between mt-16 gap-32">
+      <div className="md:flex md:justify-between mt-16 gap-3">
         {/* Languages:  */}
         <motion.div
           className="md:w-1/3 mt-10"
@@ -64,7 +64,7 @@ const MySkills = () => {
             <div className="z-10">
               <p className="font-playfair font-semibold text-5xl">01</p>
               <p className="font-playfair font-semibold text-3xl mt-3">
-                Languages & Frameworks 
+                Languages &<br /> Frameworks 
               </p>
             </div>
             <div className="w-1/2 md:w-3/4 h-32 bg-blue absolute right-0 top-0 z-[-1]" />
@@ -74,6 +74,33 @@ const MySkills = () => {
             <b className="text-red">Frameworks:</b> Node.js, React.js, Redux, Next.js, Laravel. <br />
             <b className="text-red">Databases:</b> SQL, MongoDB, Elasticsearch.
           </p>
+        </motion.div>
+        <motion.div
+          className="md:w-1/3 mt-10"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ delay: 0.1, duration: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, y: 50 },
+            visible: { opacity: 1, y: 0 },
+          }}
+        >
+          <div className="relative h-32">
+            <div className="z-10">
+              <p className="font-playfair font-semibold text-5xl">02</p>
+              <p className="font-playfair font-semibold text-3xl mt-3">
+                Design Tools 
+              </p>
+            </div>
+            <div className="w-1/2 md:w-3/4 h-32 bg-green-500 absolute right-0 top-0 z-[-1]" />
+          </div>
+          <p className="mt-5">
+            {/* <b className="text-red">Languages:</b>  */}
+            SASS, LESS, CSS, Tailwind, Material-ui, Materialize, Bootstraps <br />
+            <b className="text-red">Neural networks: </b>
+             Canva, ChatGPT.
+            </p>
         </motion.div>
 
         {/* INNOVATIVE */}
@@ -90,7 +117,7 @@ const MySkills = () => {
         >
           <div className="relative h-32">
             <div className="z-10">
-              <p className="font-playfair font-semibold text-5xl">02</p>
+              <p className="font-playfair font-semibold text-5xl">03</p>
               <p className="font-playfair font-semibold text-3xl mt-3">
                 E-commerce
               </p>
@@ -117,7 +144,7 @@ const MySkills = () => {
         >
           <div className="relative h-32">
             <div className="z-10">
-              <p className="font-playfair font-semibold text-5xl">03</p>
+              <p className="font-playfair font-semibold text-5xl">04</p>
               <p className="font-playfair font-semibold text-3xl mt-3">
                 Sport Industry
               </p>

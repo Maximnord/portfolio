@@ -1240,6 +1240,10 @@ body,
   --tw-content: url('D:/ed-roh/portfolio/public/assets/person-3.png');
   content: var(--tw-content);
 }
+.before\:content-person4::before{
+  --tw-content: url('D:/ed-roh/portfolio/public/assets/person-4.png');
+  content: var(--tw-content);
+}
 
 .hover\:bg-blue:hover{
   --tw-bg-opacity: 1;

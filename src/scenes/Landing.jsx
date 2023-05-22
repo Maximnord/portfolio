@@ -45,21 +45,23 @@ const Landing = ({ setSelectedPage }) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <p className="text-6xl font-playfair z-10 text-center md:text-start">
-            Max {""}
+          <p className="text-5xl font-playfair z-10 text-center md:text-start">
+            Fullstack {""}
             <span
               className="xs:relative xs:text-deep-blue xs:font-semibold z-20 xs:before:content-brush
-              before:absolute before:-left-[35px] before:-top-[120px] before:z-[-1]"
+              before:absolute before:-left-[36px] before:-top-[130px] before:z-[-1]"
             >
-              Soskind
+              Deviloper
             </span>
           </p>
           
-          <div className="mt-10 mb-7 text-m text-center md:text-start">
-            <p className="text-red"><b>Briefly about me:</b></p>
-            FullStack developer, highly motivated, fast self-learner, proficient
-            with a vast array of knowledge FrontEnd, BackEnd, responsive
-            frameworks, databases, and best code practices.
+          <div className="mt-12 mb-7 text-m text-center md:text-start">
+            <p className="text-2xl"><span>Hello My name is <span className="text-red"><b>Max Soskind</b></span></span></p><br/>
+            
+            <p>I'm Fullstack Web Developer. Highly motivated and creative with 3 years of experience in designing and developing user-friendly, responsive websites. Passionate about keeping up-to-date with the latest trends in web development and committed to creating cutting-edge solutions for clients. <br /><br />
+            Skilled in front-end development, including HTML, CSS, PHP and JavaScript, as well as back-end technologies such as Node.js, Laravel, MySql and MongoDB. Experienced in developing e-commerce sites, web applications, and custom CMS solutions.
+            </p>
+            
           </div>
           <div>
             <span className="text-red">Tel:</span> <a href="tel:+972-54-9735472">+972-54-9735472</a>    <br />             

@@ -21,8 +21,7 @@ const Testimonials = () => {
         </p>
         <LineGradient width="mx-auto w-5/4" />
         <p className="mt-10">
-          Here's What People are Saying About My Work. Aliquam aliquet integer
-          ut fames odio in at. At magna ornare dictum lectus.
+          Here's What People are Saying About collaboration with me and my Works.
         </p>
       </motion.div>
 
@@ -30,7 +29,7 @@ const Testimonials = () => {
       <div className="md:flex md:justify-between gap-8">
         <motion.div
           className="mx-auto relative bg-blue max-w-[400px] h-[350px] flex flex-col justify-end p-16 mt-48
-            before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2 before:content-person1"
+            before:absolute before:top-[-160px] before:-ml-[110px] before:left-1/2 before:content-person1 "
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -41,14 +40,14 @@ const Testimonials = () => {
           }}
         >
           <p className="font-playfair text-6xl">“</p>
-          <p className="text-center text-xl">
-            A auctor pharetra hendrerit mattis amet etiam interdum platea.
+          <p className="text-ellipsis text-sm">
+            Working with Max has been a game-changer for our project. He brought a level of expertise and attention to detail that we didn't even know we needed. <br /> Aviel Shamalov, Product Manager LS-Solution. Tel-Aviv
           </p>
         </motion.div>
 
         <motion.div
           className="mx-auto relative bg-red max-w-[400px] h-[350px] flex flex-col justify-end p-16 mt-48
-            before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2 before:content-person2"
+            before:absolute before:top-[-160px] before:-ml-[110px] before:left-1/2 before:content-person2"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -59,15 +58,14 @@ const Testimonials = () => {
           }}
         >
           <p className="font-playfair text-6xl">“</p>
-          <p className="text-center text-xl">
-            Aliquam aliquet integer ut fames odio in at. At magna ornare dictum
-            lectus.
+          <p className="text-ellipsis text-sm">
+            Their ability to design and develop custom solutions that meet our unique needs has been invaluable, and their communication throughout the process has been top-notch. I would highly recommend Max to anyone looking for a skilled and reliable web developer."<br/> Evyatar Madar. Colleague. 
           </p>
         </motion.div>
 
         <motion.div
           className="mx-auto relative bg-yellow max-w-[400px] h-[350px] flex flex-col justify-end p-16 mt-48
-            before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2 before:content-person3"
+            before:absolute before:top-[-160px] before:-ml-[110px] before:left-1/2 before:content-person3"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -78,8 +76,8 @@ const Testimonials = () => {
           }}
         >
           <p className="font-playfair text-6xl">“</p>
-          <p className="text-center text-xl">
-            Fames odio in at. At magna ornare dictum lectus.
+          <p className="text-ellipsis text-sm">
+            Max have a deep understanding of web development best practices and are always up-to-date with the latest technologies and trends. They have a talent for taking complex requirements and turning them into elegant. I would highly recommend hem.<br/>  Sarah Johnson, Project Manager
           </p>
         </motion.div>
       </div>
